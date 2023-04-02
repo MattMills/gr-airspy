@@ -25,6 +25,7 @@ add_library(gnuradio-airspy SHARED ${airspy_sources})
 target_link_libraries(
     gnuradio-airspy 
     gnuradio::gnuradio-runtime
+    log4cpp
     ${AIRSPYHF_LIBRARIES}
     )
 target_include_directories(gnuradio-airspy
